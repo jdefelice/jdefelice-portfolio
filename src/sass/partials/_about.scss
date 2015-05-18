@@ -1,0 +1,7 @@
+.about{
+  background: lighten(#000, 30%);
+}
+
+.skills{
+  @extend .unlist;
+}

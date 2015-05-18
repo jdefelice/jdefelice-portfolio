@@ -1,2 +1,71 @@
-body {
-  background: #fff; }
+/*
+Error: Undefined mixin 'gridle_setup'.
+        on line 7 of src/sass/_grid.scss, in `gridle_setup'
+        from line 7 of src/sass/_grid.scss
+        from line 3 of src/sass/main.scss
+
+2: @import "normalize";
+3: @import "grid";
+4: @import "global";
+5: 
+6: @import "partials/nav";
+7: @import "partials/header";
+8: @import "partials/portfolio";
+9: @import "partials/about";
+10: @import "partials/social";
+11: @import "partials/footer";
+
+Backtrace:
+src/sass/_grid.scss:7:in `gridle_setup'
+src/sass/_grid.scss:7
+src/sass/main.scss:3
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `map'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:415:in `run'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Users/Orchid/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+/Users/Orchid/.rbenv/versions/2.1.5/bin/sass:23:in `load'
+/Users/Orchid/.rbenv/versions/2.1.5/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'gridle_setup'.\A         on line 7 of src/sass/_grid.scss, in `gridle_setup'\A         from line 7 of src/sass/_grid.scss\A         from line 3 of src/sass/main.scss\A \A 2: @import \"normalize\";\A 3: @import \"grid\";\A 4: @import \"global\";\A 5: \A 6: @import \"partials/nav\";\A 7: @import \"partials/header\";\A 8: @import \"partials/portfolio\";\A 9: @import \"partials/about\";\A 10: @import \"partials/social\";\A 11: @import \"partials/footer\";"; }

@@ -1,3 +1,11 @@
 @import "variables";
 @import "normalize";
+@import "grid";
 @import "global";
+
+@import "partials/nav";
+@import "partials/header";
+@import "partials/portfolio";
+@import "partials/about";
+@import "partials/social";
+@import "partials/footer";
