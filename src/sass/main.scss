@@ -1,15 +1,27 @@
-@import "variables";
+@import "shared/utilites";
+@import "shared/variables";
+@import "shared/responsive";
+@import "shared/normalize";
 
 @import "../../bower_components/susy/sass/susy";
 
-@import "normalize";
-@import "grid";
-@import "global";
+@media #{$small-only}   {
+  @import "small/small";
+}
 
-@import "partials/nav";
-@import "partials/header";
-@import "partials/portfolio";
-@import "partials/about";
-@import "partials/skills";
-@import "partials/social";
-@import "partials/footer";
+@media #{$medium-only}  {
+  @import "medium/medium";
+
+}
+
+@media #{$large-only}   {
+  @import "large/large";
+}
+
+@media #{$xlarge-only}  {
+  @import "xlarge/xlarge";
+}
+
+@media #{$xxlarge-only} {
+  @import "xxlarge/xxlarge";
+}
