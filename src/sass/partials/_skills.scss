@@ -1,0 +1,9 @@
+.design-skills{
+  @include span(6);
+  outline: 1px dotted red;
+}
+
+.coding-skills{
+  @include span(6);
+  margin-right: 0;
+}

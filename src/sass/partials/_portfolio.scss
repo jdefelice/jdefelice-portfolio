@@ -3,9 +3,9 @@
 }
 
 .portfolio-item{
-  @include span(4);
+  @include span(6);
 
-  &:last-child{
+  &:nth-child(odd){
     margin-right: 0;
   }
 
@@ -17,4 +17,8 @@
 
 .portfolio-image{
   max-width: 100%;
+}
+
+.portfolio-item-link{
+  display: block;
 }
